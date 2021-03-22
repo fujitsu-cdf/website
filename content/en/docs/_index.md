@@ -33,7 +33,9 @@ The Tekton project consists of the following components:
 - **[Tekton Operator](https://github.com/tektoncd/operator/blob/main/README.md)** is a Kubernetes [Operator pattern](https://operatorhub.io/what-is-an-operator)
   that allows you to install, update, and remove Tekton projects on your Kubernetes cluster.
 
+
 Tekton Pipelines provide k8s-style resources for declaring CI/CD-style pipelines.  
+
 
 ![Pipeline](/docs/concepts/concept-tasks-pipelines.png)
 
