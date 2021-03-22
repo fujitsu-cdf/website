@@ -12,7 +12,7 @@ Tekton is an open-source cloud native CI/CD (Continuous Integration and
 Delivery/Deployment) solution. It allows developers to build, test, and
 deploy across destinations using a Kubernetes cluster of their own.
 
-The Tekton project, consists of the following components:
+The Tekton project consists of the following components:
 
 
 - **[Tekton Pipelines](https://github.com/tektoncd/pipeline/blob/master/docs/README.md)** provides basic building blocks (tasks and pipelines) of a CI/CD workflow
@@ -33,7 +33,7 @@ The Tekton project, consists of the following components:
 - **[Tekton Operator](https://github.com/tektoncd/operator/blob/main/README.md)** is a Kubernetes [Operator pattern](https://operatorhub.io/what-is-an-operator)
   that allows you to install, update, and remove Tekton projects on your Kubernetes cluster.
 
-The Tekton Pipelines, provides k8s-style resources for declaring CI/CD-style pipelines.  
+Tekton Pipelines provide k8s-style resources for declaring CI/CD-style pipelines.  
 
 ![Pipeline](/docs/concepts/concept-tasks-pipelines.png)
 
