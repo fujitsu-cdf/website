@@ -15,7 +15,7 @@ deploy across destinations using a Kubernetes cluster of their own.
 The Tekton project consists of the following components:
 
 
-- **[Tekton Pipelines](https://github.com/tektoncd/pipeline/blob/master/docs/README.md)** provides basic building blocks (tasks and pipelines) of a CI/CD workflow
+- **[Tekton Pipelines](https://github.com/tektoncd/pipeline/blob/main/docs/README.md)** provides basic building blocks (tasks and pipelines) of a CI/CD workflow
 
 - **[Tekton Triggers](https://github.com/tektoncd/triggers/blob/main/README.md)** allows you to instantiate pipelines based on events.
 
@@ -25,10 +25,10 @@ The Tekton project consists of the following components:
 - **[Tekton Dashboard](https://github.com/tektoncd/dashboard/blob/main/README.md)** is a Web-based graphical interface for Tekton
   Pipelines that displays information about the execution of your pipelines. It is currently a work-in-progress.
 
-- **[Tekton Catalog](https://github.com/tektoncd/catalog/blob/v1beta1/README.md)** is a repository of high-quality, community-contributed
+- **[Tekton Catalog](https://github.com/tektoncd/catalog/blob/main/README.md)** is a repository of high-quality, community-contributed
   Tekton building blocks - `Tasks`, `Pipelines`, and so on - that are ready for use in your own pipelines.
 
-- **[Tekton Hub](https://github.com/tektoncd/hub/blob/master/README.md)** is a Web-based graphical interface for accessing the Tekton Catalog.
+- **[Tekton Hub](https://github.com/tektoncd/hub/blob/main/README.md)** is a Web-based graphical interface for accessing the Tekton Catalog.
 
 - **[Tekton Operator](https://github.com/tektoncd/operator/blob/main/README.md)** is a Kubernetes [Operator pattern](https://operatorhub.io/what-is-an-operator)
   that allows you to install, update, and remove Tekton projects on your Kubernetes cluster.
