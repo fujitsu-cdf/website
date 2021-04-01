@@ -38,7 +38,6 @@ Pipelines, of all the components, provides the core functionality of Tekton and 
 ![Pipeline](/docs/concepts/concept-tasks-pipelines.png)
 
 {{% alert title="Note" color="success" %}}
-To get started, read the contents below.
 
 Tekton provides a number of interactive tutorials at [tekton.dev/try](/try)
 for developers to get hands-on experience with the project.
