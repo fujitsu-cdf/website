@@ -12,7 +12,6 @@ Tekton is a cloud-native solution for building CI/CD pipelines. It consists of T
 the building blocks, and of supporting components, such as Tekton CLI and Tekton Catalog, that make Tekton a complete ecosystem.  
 Tekton is part of the [CD Foundation](https://cd.foundation/), a [Linux Foundation](https://www.linuxfoundation.org/projects/) project. For more information, see the [Overview of Tekton](/docs/overview). 
  
-![Pipeline](/docs/concepts/concept-tasks-pipelines.png)
 
 {{% alert title="Note" color="success" %}}
 
