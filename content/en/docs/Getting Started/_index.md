@@ -46,11 +46,11 @@ kubectl apply --filename https://storage.googleapis.com/tekton-releases/pipeline
 ```
 
 Replace `YOUR-VERSION` with the release you prefer. [You can find the full list
-of official Tekton releases on GitHub](https://github.com/tektoncd/pipeline/releases). 
+of official Tekton releases on GitHub](https://github.com/tektoncd/pipeline/releases).
 
 Additionally, Tekton Pipelines pushes nightly releases every night to
 `gcr.io/tekton-nightly`. If you are feeling adventurous and would like to
-experiment with the most recent, unreleased code, see [Tekton Development Guide](https://github.com/tektoncd/pipeline/blob/master/DEVELOPMENT.md).
+experiment with the most recent, unreleased code, see [Tekton Development Guide](https://github.com/tektoncd/pipeline/blob/main/DEVELOPMENT.md).
 {{% /alert %}}
 
 It may take a few moments before the installation completes. You can check
@@ -217,7 +217,8 @@ rpm-based distros).
 
     ```bash
     # Replace LINK-TO-THE-PACKAGE with the package URL you would like to use.
-    rpm -Uvh LINK-TO-THE-PACKAGE
+    curl -LO LINK-TO-THE-PACKAGE
+    sudo dpkg -i ./PACKAGE-NAME
     ```
 
     If you are using the latest releases of Ubuntu or Debian, you may use the
@@ -241,7 +242,7 @@ rpm-based distros).
     rpm -Uvh LINK-TO-THE-PACKAGE
     ```
 
-    If you are using Fedora 30/31, CentOS 7/8, EPEL, or RHEL 8, @chmousel
+    If you are using Fedora 33/34, CentOS 7/8, EPEL, or RHEL 8, @chmousel
     provides an unofficial `copr` package repository for installing the
     package:
 

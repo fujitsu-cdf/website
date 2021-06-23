@@ -46,26 +46,26 @@ Tekton provides the following benefits to builders and users of CI/CD systems:
 
 Tekton consists of the following components:
 
-- **[Tekton Pipelines](https://github.com/tektoncd/pipeline/blob/master/docs/README.md)** is the foundation of Tekton. It
+- **[Tekton Pipelines](https://github.com/tektoncd/pipeline/blob/main/docs/README.md)** is the foundation of Tekton. It
   defines a set of Kubernetes [Custom Resources](https://kubernetes.io/docs/concepts/extend-kubernetes/api-extension/custom-resources/)
-  that act as building blocks from which you can assemble CI/CD pipelines. 
+  that act as building blocks from which you can assemble CI/CD pipelines.
 
-- **[Tekton Triggers](https://github.com/tektoncd/triggers/blob/master/README.md)** allows you to instantiate pipelines based on events.
+- **[Tekton Triggers](https://github.com/tektoncd/triggers/blob/main/README.md)** allows you to instantiate pipelines based on events.
   For example, you can trigger the instantiation and execution of a pipeline every time a PR is merged against a GitHub repository. You
-  can also build a user interface that launches specific Tekton triggers. 
+  can also build a user interface that launches specific Tekton triggers.
 
-- **[Tekton CLI](https://github.com/tektoncd/cli/blob/master/README.md)** provides a command-line interface called `tkn`, built on top
-  of the Kubernetes CLI, that allows you to interact with Tekton. 
+- **[Tekton CLI](https://github.com/tektoncd/cli/blob/main/README.md)** provides a command-line interface called `tkn`, built on top
+  of the Kubernetes CLI, that allows you to interact with Tekton.
 
-- **[Tekton Dashboard](https://github.com/tektoncd/dashboard/blob/master/README.md)** is a Web-based graphical interface for Tekton
-  Pipelines that displays information about the execution of your pipelines. It is currently a work-in-progress. 
+- **[Tekton Dashboard](https://github.com/tektoncd/dashboard/blob/main/README.md)** is a Web-based graphical interface for Tekton
+  Pipelines that displays information about the execution of your pipelines. It is currently a work-in-progress.
 
 - **[Tekton Catalog](https://github.com/tektoncd/catalog/blob/v1beta1/README.md)** is a repository of high-quality, community-contributed
   Tekton building blocks - `Tasks`, `Pipelines`, and so on - that are ready for use in your own pipelines.
 
-- **[Tekton Hub](https://github.com/tektoncd/hub/blob/master/README.md)** is a Web-based graphical interface for accessing the Tekton Catalog.
+- **[Tekton Hub](https://github.com/tektoncd/hub/blob/main/README.md)** is a Web-based graphical interface for accessing the Tekton Catalog.
 
-- **[Tekton Operator](https://github.com/tektoncd/operator/blob/master/README.md)** is a Kubernetes [Operator pattern](https://operatorhub.io/what-is-an-operator)
+- **[Tekton Operator](https://github.com/tektoncd/operator/blob/main/README.md)** is a Kubernetes [Operator pattern](https://operatorhub.io/what-is-an-operator)
   that allows you to install, update, and remove Tekton projects on your Kubernetes cluster.
 
 
@@ -75,7 +75,7 @@ To install Tekton, you need a Kubernetes cluster running a
 [version of Kubernetes specified for the current Tekton release](https://github.com/tektoncd/pipeline/#want-to-start-using-pipelines).
 Once installed, you can interact with Tekton using one of the following:
 
-- **[The tkn CLI](https://github.com/tektoncd/cli/blob/master/README.md)**, also known as the Tekton CLI, is the preferred command-line method
+- **[The tkn CLI](https://github.com/tektoncd/cli/blob/main/README.md)**, also known as the Tekton CLI, is the preferred command-line method
   for interacting with Tekton. `tkn` provides a quick and streamlined experience, including high-level commands and color coding. To use it,
   you only need to be familiar with Tekton.
 - **[The kubectl CLI](https://kubernetes.io/docs/reference/kubectl/overview/)**, also known as the Kubernetes CLI, provides substantially more
@@ -97,17 +97,17 @@ We also recommend having the following items configured on your Kubernetes clust
 
 Tekton introduces the concept of `Tasks`, which specify the workloads you want to run:
 
-- [`Task`](https://github.com/tektoncd/pipeline/blob/master/docs/tasks.md) - defines a series of ordered `Steps`, and each `Step` invokes a specific
-  build tool on a specific set of inputs and produces a specific set of outputs, which can be used as inputs in the next `Step`. 
+- [`Task`](https://github.com/tektoncd/pipeline/blob/main/docs/tasks.md) - defines a series of ordered `Steps`, and each `Step` invokes a specific
+  build tool on a specific set of inputs and produces a specific set of outputs, which can be used as inputs in the next `Step`.
 
-- [`Pipeline`](https://github.com/tektoncd/pipeline/blob/master/docs/pipelines.md) - defines a series of ordered `Tasks`, and just like `Steps` in a
+- [`Pipeline`](https://github.com/tektoncd/pipeline/blob/main/docs/pipelines.md) - defines a series of ordered `Tasks`, and just like `Steps` in a
   `Task`, a `Task` in a `Pipeline` can use the output of a previously executed `Task` as its input.
 
-- [`TaskRun`](https://github.com/tektoncd/pipeline/blob/master/docs/taskruns.md) - instantiates a specific `Task` to execute on a particular set of
+- [`TaskRun`](https://github.com/tektoncd/pipeline/blob/main/docs/taskruns.md) - instantiates a specific `Task` to execute on a particular set of
   inputs and produce a particular set of outputs. In other words, the `Task` tells Tekton what to do, and a `TaskRun` tells Tekton what to do it **on**,
   as well as any additional details on how to exactly do it, such as build flags.
 
-- [`PipelineRun`](https://github.com/tektoncd/pipeline/blob/master/docs/pipelineruns.md) - instantiates a specific `Pipeline` to execute on a particular
+- [`PipelineRun`](https://github.com/tektoncd/pipeline/blob/main/docs/pipelineruns.md) - instantiates a specific `Pipeline` to execute on a particular
   set of inputs and produce a particular set of outputs to particular destinations.
 
 Each `Task` executes in its own Kubernetes Pod. Thus, by default, `Tasks` within a `Pipeline` do not share data. To share data among `Tasks`,
@@ -122,4 +122,4 @@ you must explicitly configure each `Task` to make its outputs available to the n
 
 ### I want to learn more!
 
-To learn more about the Tekton entities described above and start using Tekton, see the [Tekton Pipelines Overview](https://github.com/tektoncd/pipeline/blob/master/docs/README.md).
+To learn more about the Tekton entities described above and start using Tekton, see the [Tekton Pipelines Overview](https://github.com/tektoncd/pipeline/blob/main/docs/README.md).
